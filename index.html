@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cветланкин подарок</title>
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <h1 class="title accent-text">С<br />Наступающим<br />2026 годом!</h1>
+    <div class="card__block-image">
+      <img
+        class="card__block-image_image"
+        src="./images/ferrari-svgrepo-com.svg"
+        alt="лошадка"
+      />
+    </div>
+    <p class="subtitle main-text">
+      ну че, Ferrari победит в их год надеюсь ...
+    </p>
+    <p class="subtitle main-text">
+      а пока, Светлана, листай ниже и находи свой подарок
+    </p>
+    <h4 class="title accent-text">ИИИИ твой подрок это...</h1>
+    <div class="card">
+      <h2 class="badge accent-text">книгопоток</h2>
+      <div class="counter">
+        <h3 class="counter_title accent-text">12</h3>
+        <p class="counter_text main-text">подписка на<br><span class="accent-text">книг</span></p>
+      </div>
+      <p class="counter_subtitle main-text">Республика*</p>
+    </div>
+    <ul class="list">
+      <p class="list_title main-text">
+        Кратко рассказываю, <b>что это</b> и <b>как юзать</b>
+      </p>
+      <li class="list_item main-text">Каждый месяц тебе доступна 1 книга стоимостью <b>до 1200 Р</b></li>
+      <li class="list_item main-text">Один месяц – одна книга</li>
+      <li class="list_item main-text">
+        Если пропустила 1 или несколько месяцев, можно получить книги за
+        прошедший период, но не в счет будущего
+      </li>
+      <li class="list_item main-text">
+        Можно покупать в <b>магазине</b>, можно заказывать <b>онлайн</b> (за
+        доставку приедтся платить) - в остальном все free
+      </li>
+    </ul>
+    <div class="buttons">
+      <button
+        class="button main-text"
+        type="button"
+        onclick="window.open('https://www.respublica.ru/knigopotok?from=block3', '_blank')"
+      >
+        На сайт
+      </button>
+      <button
+        class="button main-text"
+        data-text=""
+        onclick="copyTextFromButton(this)"
+      >
+        Код
+      </button>
+
+      <script>
+        async function copyTextFromButton(button) {
+          const text = button.getAttribute("data-text");
+
+          try {
+            await navigator.clipboard.writeText(text);
+          } catch (err) {
+            console.error("Ошибка копирования:", err);
+            alert("Не удалось скопировать текст");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

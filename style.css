@@ -1,0 +1,131 @@
+:root {
+  --main-font-family: inter-variable, sans-serif;
+  --accent-font-family: pressstart2p, fantasy;
+  --title-font-weight: 715;
+  --text-font-weight: 410;
+  --text-font-size: 18px;
+  --main-color: #000;
+  --accent-color: #ffeb00;
+}
+
+.page {
+  background: #ffeb00;
+  min-inline-size: 375px;
+  min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding-block: 140px 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.accent-text {
+  font-family: var(--accent-font-family), sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title {
+  max-width: 410px;
+  line-height: 150%;
+  font-size: 29px;
+}
+
+.card__block-image {
+  max-height: 262px;
+  max-width: 262px;
+}
+
+.card__block-image_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.main-text {
+  max-width: 372px;
+  font-family: var(--main-font-family), sans-serif;
+  font-size: 20px;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+h4 {
+  margin-top: 250px;
+}
+
+.card {
+  max-width: 410px;
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  color: var(--accent-color);
+  gap: 20px;
+}
+
+.badge {
+  color: var(--main-color);
+  font-size: 25px;
+  background-color: var(--accent-color);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.counter_title {
+  font-size: 60px;
+}
+
+.counter_text {
+  line-height: 29px;
+}
+
+.counter_subtitle {
+  align-self: center;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.list {
+  max-width: 372px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list_item {
+  font-size: 16px;
+  margin-left: 15px;
+  list-style-type: disc;
+}
+
+.buttons {
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: var(--accent-color);
+  border: none;
+}
